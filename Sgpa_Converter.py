@@ -1,5 +1,5 @@
 # Sgpa Converter
-# Azaz Ahmad Swapnil
+# Azaz Ahmad Swapnil(191-15-2426)
 # only for 7 course result count
 
 
@@ -33,7 +33,9 @@ Count7 = (Course_7_cr * Course_7_res)
 # Now using all the count 1-7 we can calculate the exact sgpa
 
 Sgpa_all = float(Count1 + Count2 + Count3 + Count4 + Count5 + Count6 + Count7)
-Sgpa = float(Sgpa_all) / 13
+Course_cr = float(Course_1_cr+Course_2_cr+Course_3_cr+Course_4_cr+Course_5_cr+Course_6_cr+Course_7_cr)
+
+Sgpa = float(Sgpa_all) / (Course_cr)
 
 if Sgpa > 3:
     print("Congratulations!! You Got First Class and your SGPA Is: ", Sgpa, )
